@@ -60,5 +60,32 @@
     </div>
     <br>
     <footer>Mobile Shop, Hradska ulica, Bratislava, Slovakia</footer>
+    <script>
+    let changeH1Text = function () {
+       let heading1 = document.getElementsByTagName("h1")
+       heading1.innerHTML = "Heading1 text changed"
+    }
+
+    let changeBackgroundColor = function () {
+        let backgroundColor = document.getElementsByTagName("body")
+        backgroundColor.style.backgroundColor = "LightBlue"
+    }
+
+    let changeFooterAddress = function () {
+        let fakeFooterAddress = document.getElementsByTagName("footer") 
+        fakeFooterAddress.innerHTML = "Fake address"
+    }
+
+    let addClassToAmazonLink = function () {
+        let classToAmazonLink = document.getElementsByTagName("a")
+        classToAmazonLink.classList.add = "amazon"
+    }
+
+    let toggleClassForImages = function () {
+        let classForImages = document.getElementsByTagName("img")
+        classForImages.classList.toggle = "imageclass" 
+    }
+    
+    </script>
 </body>
 </html>
