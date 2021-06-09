@@ -1,96 +1,155 @@
 <!DOCTYPE html>
-<html>
+    <html lang="en">
 
-<head>
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+                body {
+                    background-color: lightblue;
+                    font-family: Cambria, 'Times New Roman', serif
+                }
 
-</head>
+                h1 {
+                    color: darkblue;
+                    text-align: center;
+                }
 
-<body>
-    <h1>Smartphone Shop Website</h1>
+                th {
+                    font-size: 22px 
+                }
 
-    <table>
-        <tr>
-            <th>Image</th>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Price</th>
-            <th>Link on Amazon</th>
-        </tr>
-        <tr>
-            <td><img src="https://cdn.mos.cms.futurecdn.net/4kHLTeVpw2K4v6Lib4W94N-970-80.jpg.webp" alt="Samsung Galaxy S21 Ultra" width="128"> </td>
-            <td>Samsung Galaxy S21 Ultra</td>
-            <td>A top tier smartphone, and it takes our best crown</td>
-            <td>$ 999.99</td>
-            <td><a href="https://www.amazon.com/dp/B08N2MSSZY/">Samsung Galaxy S21 Ultra on Amazon</a> </td>
-        </tr>
-        <tr>
-            <td><img src="https://cdn.mos.cms.futurecdn.net/ZyW4uTkD6kDbUZhJgQ4LhV-970-80.jpg.webp" alt="OnePlus 9 Pro" width="128"> </td>
-            <td>OnePlus 9 Pro</td>
-            <td>A giant leap for OnePlus photography</td>
-            <td>$ 939.99</td>
-            <td><a href="https://www.amazon.com/dp/B07XM7WVS8/">OnePlus 9 Pro on Amazon</a></td>
-        </tr>
-        <tr>
-            <td><img src="https://cdn.mos.cms.futurecdn.net/GHPuXZ7uaD7fh3SvY4pTAB-970-80.jpg.webp" alt="iPhone 12 Pro / 12 Pro Max" width="128"></td>
-            <td>iPhone 12 Pro / 12 Pro Max</td>
-            <td>Our favorite iPhone pair</td>
-            <td>$ 999</td>
-            <td><a href="https://www.amazon.com/dp/B08L5Q4BLG/">iPhone 12 Pro on Amazon</a></td>
-        </tr>
-        <tr>
-            <td><img src="https://cdn.mos.cms.futurecdn.net/bUiMK3ENnByGWLKDujAfg8-970-80.jpg.webp" alt="Samsung Galaxy S21 / S21 Plus" width="128"></td>
-            <td>Samsung Galaxy S21 / S21 Plus</td>
-            <td>Not the best of the S series, but nevertheless great</td>
-            <td>$ 699.99</td>
-            <td><a href="https://www.amazon.com/dp/B08N3LQBS9/">Samsung Galaxy S21 Plus on Amazon</a></td>
+                table, th, td {
+                    text-align: center;
+                    margin: auto;
+                    border: solid darkblue;
+                    border-collapse: collapse;
+                    padding: 4px 
+                }
 
-        </tr>
-        <tr>
-            <td><img src="https://cdn.mos.cms.futurecdn.net/4fxJtRFSxRMGs6yUsjhrkS-970-80.jpg.webp" alt="iPhone 12 mini / 12" width="128"></td>
-            <td>iPhone 12 mini / 12</td>
-            <td>The best Apple iPhone bang for your buck</td>
-            <td>$ 799.99</td>
-            <td><a href="https://www.amazon.com/dp/B08L5NZHK6/">iPhone 12 on Amazon</a></td>
-        </tr>
-    </table>
-    <div>
-    <p>Message Board</p>
-    <input type="text"> <br>
-    <input type="submit">
-    </div>
-    <br>
-    <footer>Mobile Shop, Hradska ulica, Bratislava, Slovakia</footer>
-    <script>
-    let changeH1Text = function () {
-       let heading1 = document.getElementsByTagName("h1")
-       heading1.innerHTML = "Heading1 text changed"
+                div {
+                    text-align: center
+                }
+
+            </style>
+            <title>Smartphone Shop</title>
+        </head>
+
+        <body>
+            <!-- EX1.: Add an h1 tag with the name of your shop -->
+            <h1>Smartphone Shop Website</h1>
+
+            <!--EX2.: Add a TABLE with the top 5 products of your shop
+            EX3.: Insert for each product an image, a title, a description and a price
+            EX4.: Add links to existing Amazon products for each item in the table-->
+
+                <table>
+                    <tr>
+                        <th>Image</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Link on Amazon</th>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.mos.cms.futurecdn.net/4kHLTeVpw2K4v6Lib4W94N-970-80.jpg.webp" alt="Samsung Galaxy S21 Ultra" width="128"> </td>
+                        <td>Samsung Galaxy S21 <br>Ultra</td>
+                        <td><p>A top tier smartphone, and <br>it takes our best crown</p></td>
+                        <td><strong>$ 999.99</strong></td>
+                        <td><a href="https://www.amazon.com/dp/B08N2MSSZY/">Samsung Galaxy S21 Ultra on Amazon</a> </td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.mos.cms.futurecdn.net/ZyW4uTkD6kDbUZhJgQ4LhV-970-80.jpg.webp" alt="OnePlus 9 Pro" width="128"> </td>
+                        <td>OnePlus 9 Pro</td>
+                        <td><p>A giant leap for OnePlus <br>photography</p></td>
+                        <td><strong>$ 939.99</strong></td>
+                        <td><a href="https://www.amazon.com/dp/B07XM7WVS8/">OnePlus 9 Pro on Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.mos.cms.futurecdn.net/GHPuXZ7uaD7fh3SvY4pTAB-970-80.jpg.webp" alt="iPhone 12 Pro / 12 Pro Max" width="128"></td>
+                        <td>iPhone 12 Pro <br>/ 12 Pro Max</td>
+                        <td><p>Our favorite iPhone pair</p></td>
+                        <td><strong>$ 999</strong></td>
+                        <td><a href="https://www.amazon.com/dp/B08L5Q4BLG/">iPhone 12 Pro on Amazon</a></td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.mos.cms.futurecdn.net/bUiMK3ENnByGWLKDujAfg8-970-80.jpg.webp" alt="Samsung Galaxy S21 / S21 Plus" width="128"></td>
+                        <td>Samsung Galaxy S21 <br>/ S21 Plus</td>
+                        <td><p>Not the best of the S series, <br>but nevertheless great</p></td>
+                        <td><strong>$ 699.99</strong></td>
+                        <td><a href="https://www.amazon.com/dp/B08N3LQBS9/">Samsung Galaxy S21 Plus on Amazon</a></td>  
+
+                    </tr>
+                    <tr>
+                        <td><img src="https://cdn.mos.cms.futurecdn.net/4fxJtRFSxRMGs6yUsjhrkS-970-80.jpg.webp" alt="iPhone 12 mini / 12" width="128"></td>
+                        <td>iPhone 12 mini <br>/ 12</td>
+                        <td><p>The best Apple iPhone <br>bang for your buck</p></td>
+                        <td><strong>$ 799.99</strong></td>
+                        <td><a href="https://www.amazon.com/dp/B08L5NZHK6/">iPhone 12 on Amazon</a></td>
+                    </tr>
+                </table>
+
+            <!--EX5.: Add a footer with the address and the name of your shop
+            EX6.: Add a message board where the user can type a message in it 
+            (no real posting/saving features required!)-->
+            <div>
+                <h4>Message Board</h4>
+                <input type="text"> <br><br>
+                <input type="submit">
+                <footer><br>Mobile Shop, Hradska ulica, Bratislava, Slovakia</footer>
+            </div>
+
+            <script>
+
+            /*EX7.: Write a function to change the h1 text*/
+            const changeH1Text = function () {
+                document.querySelector("h1").innerHTML = "Heading1 text changed"
+            }
+
+            /*EX8.: Write a function to change the page background color*/            
+            const changeBackgroundColor = function () {
+                document.querySelector("body").style.backgroundColor = "LightGray"
     }
+            /*EX9.: Write a function to change the footer address with a fake one*/
+            const changeFooterAddress = function () {
+                document.querySelector("footer").innerHTML = "Fake address"
+            }
+            
+            /*EX10.: Write a function to add a CSS class to every Amazon link*/
+            const addClassToAmazonLink = function () {
+                for (let node of document.querySelectorAll("a")) {
+                    node.classList.add = "amazon"
+                }
+            }
 
-    let changeBackgroundColor = function () {
-        let backgroundColor = document.getElementsByTagName("body")
-        backgroundColor.style.backgroundColor = "LightBlue"
-    }
+            /*EX11: Write a function to toggle a CSS class for all the images in the table; 
+            that class should set the visibility of the image*/
+            const toggleClassForImages = function () {
+                for (let image of document.querySelectorAll("img")) {
+                node.classList.toggle = "imageclass" 
+                }
+            }
 
-    let changeFooterAddress = function () {
-        let fakeFooterAddress = document.getElementsByTagName("footer") 
-        fakeFooterAddress.innerHTML = "Fake address"
-    }
+            /*EX12: Write a function to color the price of each product 
+            in a different one every time it's invoked*/
 
-    let addClassToAmazonLink = function () {
-        let classToAmazonLink = document.getElementsByTagName("a")
-        classToAmazonLink.classList.add = "amazon"
-    }
+            const setRandomColor = function () {
+                const color = getRandomColor();
 
-    let toggleClassForImages = function () {
-        let classForImages = document.getElementsByTagName("img")
-        classForImages.classList.toggle = "imageclass" 
-    }
+                for (let price of document.querySelectorAll("tr > td:nth-child(4)")) {
+                price.style.color = color;
+                }
+            }
 
-    let colorPrice = function () {
-        let price = document.querySelector("td")
-        price.style.color = "red"
-    }
+            const getRandomColor = function () {
+                const red = Math.round(Math.random() * 255);
+                const green = Math.round(Math.random() * 255);
+                const blue = Math.round(Math.random() * 255);
+
+                return "rgb(" + red + ", " + green + ", " + blue + ")";
+            }
     
-    </script>
-</body>
-</html>
+            </script>
+        </body>
+    </html>
