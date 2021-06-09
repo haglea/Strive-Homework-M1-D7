@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Smartphone Shop Website</h1>
+
+    <table>
+        <tr>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Link on Amazon</th>
+        </tr>
+        <tr>
+            <td><img src="https://cdn.mos.cms.futurecdn.net/4kHLTeVpw2K4v6Lib4W94N-970-80.jpg.webp" alt="Samsung Galaxy S21 Ultra" width="128"> </td>
+            <td>Samsung Galaxy S21 Ultra</td>
+            <td>A top tier smartphone, and it takes our best crown</td>
+            <td>$ 999.99</td>
+            <td><a href="https://www.amazon.com/dp/B08N2MSSZY/">Samsung Galaxy S21 Ultra on Amazon</a> </td>
+        </tr>
+        <tr>
+            <td><img src="https://cdn.mos.cms.futurecdn.net/ZyW4uTkD6kDbUZhJgQ4LhV-970-80.jpg.webp" alt="OnePlus 9 Pro" width="128"> </td>
+            <td>OnePlus 9 Pro</td>
+            <td>A giant leap for OnePlus photography</td>
+            <td>$ 939.99</td>
+            <td><a href="https://www.amazon.com/dp/B07XM7WVS8/">OnePlus 9 Pro on Amazon</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://cdn.mos.cms.futurecdn.net/GHPuXZ7uaD7fh3SvY4pTAB-970-80.jpg.webp" alt="iPhone 12 Pro / 12 Pro Max" width="128"></td>
+            <td>iPhone 12 Pro / 12 Pro Max</td>
+            <td>Our favorite iPhone pair</td>
+            <td>$ 999</td>
+            <td><a href="https://www.amazon.com/dp/B08L5Q4BLG/">iPhone 12 Pro on Amazon</a></td>
+        </tr>
+        <tr>
+            <td><img src="https://cdn.mos.cms.futurecdn.net/bUiMK3ENnByGWLKDujAfg8-970-80.jpg.webp" alt="Samsung Galaxy S21 / S21 Plus" width="128"></td>
+            <td>Samsung Galaxy S21 / S21 Plus</td>
+            <td>Not the best of the S series, but nevertheless great</td>
+            <td>$ 699.99</td>
+            <td><a href="https://www.amazon.com/dp/B08N3LQBS9/">Samsung Galaxy S21 Plus on Amazon</a></td>
+
+        </tr>
+        <tr>
+            <td><img src="https://cdn.mos.cms.futurecdn.net/4fxJtRFSxRMGs6yUsjhrkS-970-80.jpg.webp" alt="iPhone 12 mini / 12" width="128"></td>
+            <td>iPhone 12 mini / 12</td>
+            <td>The best Apple iPhone bang for your buck</td>
+            <td>$ 799.99</td>
+            <td><a href="https://www.amazon.com/dp/B08L5NZHK6/">iPhone 12 on Amazon</a></td>
+        </tr>
+    </table>
+    <div>
+    <p>Message Board</p>
+    <input type="text"> <br>
+    <input type="submit">
+    </div>
+    <br>
+    <footer>Mobile Shop, Hradska ulica, Bratislava, Slovakia</footer>
+    <script>
+    let changeH1Text = function () {
+       let heading1 = document.getElementsByTagName("h1")
+       heading1.innerHTML = "Heading1 text changed"
+    }
+
+    let changeBackgroundColor = function () {
+        let backgroundColor = document.getElementsByTagName("body")
+        backgroundColor.style.backgroundColor = "LightBlue"
+    }
+
+    let changeFooterAddress = function () {
+        let fakeFooterAddress = document.getElementsByTagName("footer") 
+        fakeFooterAddress.innerHTML = "Fake address"
+    }
+
+    let addClassToAmazonLink = function () {
+        let classToAmazonLink = document.getElementsByTagName("a")
+        classToAmazonLink.classList.add = "amazon"
+    }
+
+    let toggleClassForImages = function () {
+        let classForImages = document.getElementsByTagName("img")
+        classForImages.classList.toggle = "imageclass" 
+    }
+
+    let colorPrice = function () {
+        let price = document.querySelector("td")
+        price.style.color = "red"
+    }
+    
+    </script>
+</body>
+</html>
