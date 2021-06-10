@@ -32,6 +32,15 @@
                     text-align: center
                 }
 
+                .amazon {
+                    color: green;
+                    font-size: 3em
+                }
+
+                .imageclass {
+                    visibility: hidden
+                }
+     
             </style>
             <title>Smartphone Shop</title>
         </head>
@@ -119,7 +128,7 @@
             /*EX10.: Write a function to add a CSS class to every Amazon link*/
             const addClassToAmazonLink = function () {
                 for (let node of document.querySelectorAll("a")) {
-                    node.classList.add = "amazon"
+                    node.classList.add("amazon")
                 }
             }
 
@@ -127,7 +136,7 @@
             that class should set the visibility of the image*/
             const toggleClassForImages = function () {
                 for (let image of document.querySelectorAll("img")) {
-                node.classList.toggle = "imageclass" 
+                    image.classList.toggle("imageclass") 
                 }
             }
 
